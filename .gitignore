@@ -1,0 +1,9 @@
+build/
+bin/
+out/
+.vs/
+*.csv
+teller.txt
+__pycache__/
+!resultaten/*.csv
+!resultaten/logs/*.csv
