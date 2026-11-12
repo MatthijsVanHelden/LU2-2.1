@@ -156,6 +156,7 @@ int main(int argc, char* argv[]) {
     while (true) {
         SOCKET a = accept(server, NULL, NULL);
         if (modus == "verbreking" && isOnderbreking()) {
+            closesocket(a);
             continue;
         }
         nieuweVerbinding(a);
